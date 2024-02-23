@@ -4,5 +4,5 @@ import jakarta.validation.constraints.NotNull;
 
 import java.util.UUID;
 
-public record TrackOrderQuery(@NotNull UUID orderTrackinId) {
+public record TrackOrderQuery(@NotNull UUID orderTrackingId) {
 }
