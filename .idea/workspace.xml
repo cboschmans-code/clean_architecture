@@ -5,19 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08d83ba2-48de-4abb-a10a-5cc2a62f816f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/test/java/com/food/ordering/system/order/service/domain/OrderApplicationServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/test/java/com/food/ordering/system/order/service/domain/OrderTestConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/docker-compose/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/docker-compose/common.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/docker-compose/init-kafka.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/docker-compose/kafka-cluster.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/docker-compose/zookeeper.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-config-data/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-config-data/src/main/java/com/food/ordering/system/kafka/config/data/KafkaConfigData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-config-data/src/main/java/com/food/ordering/system/kafka/config/data/KafkaConsumerConfigData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-config-data/src/main/java/com/food/ordering/system/kafka/config/data/KafkaProducerConfigData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-consumer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-consumer/src/main/java/com/food/ordering/system/kafka/consumer/KafkaConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-consumer/src/main/java/com/food/ordering/system/kafka/consumer/config/KafkaConsumerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/java/com/food/order/system/kafka/order/avro/model/OrderApprovalStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/java/com/food/order/system/kafka/order/avro/model/PaymentOrderStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/java/com/food/order/system/kafka/order/avro/model/PaymentRequestAvroModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/java/com/food/order/system/kafka/order/avro/model/PaymentResponseAvroModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/java/com/food/order/system/kafka/order/avro/model/PaymentStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/java/com/food/order/system/kafka/order/avro/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/java/com/food/order/system/kafka/order/avro/model/RestaurantApprovalRequestAvroModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/java/com/food/order/system/kafka/order/avro/model/RestaurantApprovalResponseAvroModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/java/com/food/order/system/kafka/order/avro/model/RestaurantOrderStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/resources/avro/payment_request.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/resources/avro/payment_response.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/resources/avro/restaurant_approval_request.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/resources/avro/restaurant_approval_response.avsc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-producer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-producer/src/main/java/com/food/ordering/system/kafka/producer/KafkaProducerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-producer/src/main/java/com/food/ordering/system/kafka/producer/exception/KafkaProducerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-producer/src/main/java/com/food/ordering/system/kafka/producer/service/KafkaProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-producer/src/main/java/com/food/ordering/system/kafka/producer/service/impl/KafkaProducerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-domain/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-application-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/OrderCreatedCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/OrderCreatedCommandHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/OrderTrackCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/OrderTrackCommandHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/mapper/OrderDataMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/mapper/OrderDataMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/com/food/ordering/system/order/service/domain/OrderDomainServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/com/food/ordering/system/order/service/domain/OrderDomainServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/com/food/ordering/system/order/service/domain/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/com/food/ordering/system/order/service/domain/entity/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/com/food/ordering/system/order/service/domain/entity/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/com/food/ordering/system/order/service/domain/entity/Restaurant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +53,7 @@
       <list>
         <option value="Record" />
         <option value="Enum" />
+        <option value="Dockerfile" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -47,45 +71,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.All in order-application-service (1).executor": "Run",
-    "JUnit.All in order-application-service (2).executor": "Run",
-    "JUnit.All in order-application-service (3).executor": "Run",
-    "JUnit.All in order-application-service.executor": "Run",
-    "JUnit.OrderApplicationServiceTest.executor": "Coverage",
-    "JUnit.OrderApplicationServiceTest.testCreateOrder.executor": "Run",
-    "JUnit.OrderApplicationServiceTest.testCreateOrderWithWrongToatlPrice.executor": "Run",
-    "Maven.food-ordering-system [clean].executor": "Run",
-    "Maven.food-ordering-system [install].executor": "Run",
-    "Maven.food-ordering-system [package].executor": "Run",
-    "Maven.order-application-service [clean].executor": "Run",
-    "Maven.order-application-service [compile].executor": "Run",
-    "Maven.order-application-service [package].executor": "Run",
-    "Maven.order-container [clean].executor": "Run",
-    "Maven.order-container [package].executor": "Run",
-    "Maven.order-domain-core [clean].executor": "Run",
-    "Maven.order-domain-core [package].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "/home/barnard/Projecten/Udemy Microservices: Clean Architecture, DDD, SAGA, Outbox & Kafka/food-ordering-system/common/common-domain/src/main/java/com/food/ordering/system",
-    "last_opened_file_path": "/home/barnard/Projecten/Udemy Microservices Clean Architecture, DDD, SAGA, Outbox & Kafka/food-ordering-system",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.stylelint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.stylelint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.All in order-application-service (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in order-application-service (2).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in order-application-service (3).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in order-application-service.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OrderApplicationServiceTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.OrderApplicationServiceTest.testCreateOrder.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OrderApplicationServiceTest.testCreateOrderWithWrongToatlPrice.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.food-ordering-system [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.food-ordering-system [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.food-ordering-system [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.order-application-service [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.order-application-service [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.order-application-service [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.order-container [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.order-container [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.order-domain-core [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.order-domain-core [package].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;/home/barnard/Projecten/Udemy Microservices: Clean Architecture, DDD, SAGA, Outbox &amp; Kafka/food-ordering-system/common/common-domain/src/main/java/com/food/ordering/system&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/barnard/Projecten/Udemy Microservices Clean Architecture, DDD, SAGA, Outbox &amp; Kafka/food-ordering-system&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.food.ordering.system.order.service.domain.exception" />
@@ -190,7 +214,8 @@
       <workItem from="1708616891462" duration="4826000" />
       <workItem from="1708704973998" duration="6030000" />
       <workItem from="1708722951487" duration="13000000" />
-      <workItem from="1708777799120" duration="3251000" />
+      <workItem from="1708777799120" duration="11428000" />
+      <workItem from="1708858379896" duration="12608000" />
     </task>
     <servers />
   </component>
@@ -208,7 +233,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/food_ordering_system$OrderApplicationServiceTest.ic" NAME="OrderApplicationServiceTest Coverage Results" MODIFIED="1708725411556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+    <SUITE FILE_PATH="coverage/food_ordering_system$OrderApplicationServiceTest.ic" NAME="OrderApplicationServiceTest Coverage Results" MODIFIED="1708783991808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>com.food.ordering.system.order.service.domain.*</FILTER>
     </SUITE>
   </component>
