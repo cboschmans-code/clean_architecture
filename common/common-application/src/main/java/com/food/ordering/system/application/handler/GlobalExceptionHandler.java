@@ -35,7 +35,7 @@ public class GlobalExceptionHandler {
             errorDTO= new ErrorDTO(HttpStatus.BAD_REQUEST.getReasonPhrase(), violations);
         } else {
             log.error(validationException.getMessage(),validationException);
-            errorDTO= new ErrorDTO(HttpStatus.BAD_REQUEST.getReasonPhrase(), validationException.getMessage())
+            errorDTO= new ErrorDTO(HttpStatus.BAD_REQUEST.getReasonPhrase(), validationException.getMessage());
         }
         return  errorDTO;
     }

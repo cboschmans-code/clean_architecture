@@ -5,17 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08d83ba2-48de-4abb-a10a-5cc2a62f816f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/common/common-application/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-application/src/main/java/com/food/ordering/system/application/handler/ErrorDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-application/src/main/java/com/food/ordering/system/application/handler/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-application/src/main/java/com/food/ordering/system/order/service/application/exceptionhandler/OrderGlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-application/src/main/java/com/food/ordering/system/order/service/application/rest/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-data-access/src/main/java/com/food/ordering/system/order/service/data/access/customer/adapter/CustomerRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-data-access/src/main/java/com/food/ordering/system/order/service/data/access/customer/entity/CustomerEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-data-access/src/main/java/com/food/ordering/system/order/service/data/access/customer/mapper/CustomerDataAccessMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-data-access/src/main/java/com/food/ordering/system/order/service/data/access/customer/repository/CustomerJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-data-access/src/main/java/com/food/ordering/system/order/service/data/access/order/adapter/OrderRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-data-access/src/main/java/com/food/ordering/system/order/service/data/access/order/entity/OrderAddressEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-data-access/src/main/java/com/food/ordering/system/order/service/data/access/order/entity/OrderEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-data-access/src/main/java/com/food/ordering/system/order/service/data/access/order/entity/OrderItemEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-data-access/src/main/java/com/food/ordering/system/order/service/data/access/order/entity/OrderItemEntityId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-data-access/src/main/java/com/food/ordering/system/order/service/data/access/order/mapper/OrderDataAccessMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-data-access/src/main/java/com/food/ordering/system/order/service/data/access/order/repository/OrderJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-data-access/src/main/java/com/food/ordering/system/order/service/data/access/restaurant/adapter/RestaurantRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-data-access/src/main/java/com/food/ordering/system/order/service/data/access/restaurant/entity/RestaurantEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-data-access/src/main/java/com/food/ordering/system/order/service/data/access/restaurant/entity/RestaurantEntityId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-data-access/src/main/java/com/food/ordering/system/order/service/data/access/restaurant/exception/RestaurantDataAccessException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-data-access/src/main/java/com/food/ordering/system/order/service/data/access/restaurant/mapper/RestaurantDataAccessMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-data-access/src/main/java/com/food/ordering/system/order/service/data/access/restaurant/repository/RestaurantJpaRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-application/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-application/src/main/java/com/food/ordering/system/application/handler/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-application/src/main/java/com/food/ordering/system/application/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-data-access/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-data-access/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/mapper/OrderDataMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/src/main/java/com/food/ordering/system/order/service/domain/mapper/OrderDataMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/com/food/ordering/system/order/service/domain/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/com/food/ordering/system/order/service/domain/entity/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/com/food/ordering/system/order/service/domain/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/com/food/ordering/system/order/service/domain/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/com/food/ordering/system/order/service/domain/entity/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/com/food/ordering/system/order/service/domain/entity/OrderItem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,14 +40,17 @@
       <list>
         <option value="Enum" />
         <option value="Dockerfile" />
-        <option value="Interface" />
         <option value="Record" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -69,7 +85,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_directory_selection&quot;: &quot;/home/barnard/Projecten/Udemy Microservices: Clean Architecture, DDD, SAGA, Outbox &amp; Kafka/food-ordering-system/common/common-domain/src/main/java/com/food/ordering/system&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/barnard/Projecten/Udemy Microservices Clean Architecture, DDD, SAGA, Outbox &amp; Kafka/food-ordering-system&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/barnard/Projecten/Udemy Microservices Clean Architecture, DDD, SAGA, Outbox &amp; Kafka/food-ordering-system/order-service/order-data-access/src/main/java/com/food/ordering/system/order/service/data/access/restaurant&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -86,11 +102,15 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.food.ordering.system.order.service.data.access.order.entity" />
       <recent name="com.food.ordering.system.order.service.application.exceptionhandler" />
       <recent name="com.food.ordering.system.order.service.domain.exception" />
       <recent name="com.food.ordering.system.domain.valueobject" />
       <recent name="com.food.ordering.system.order.service.domain.dto.create" />
-      <recent name="com.food.ordering.system.order.service.domain.valueobject" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/order-service/order-data-access/src/main/java/com/food/ordering/system/order/service/data/access/restaurant" />
+      <recent name="$PROJECT_DIR$/order-service/order-data-access/src/main/java/com/food/ordering/system/order/service/data/access/customer" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.OrderApplicationServiceTest">
@@ -189,7 +209,8 @@
       <workItem from="1708704973998" duration="6030000" />
       <workItem from="1708722951487" duration="13000000" />
       <workItem from="1708777799120" duration="11428000" />
-      <workItem from="1708858379896" duration="19223000" />
+      <workItem from="1708858379896" duration="21563000" />
+      <workItem from="1708935926719" duration="16399000" />
     </task>
     <servers />
   </component>

@@ -50,9 +50,11 @@ public class OrderDataMapper {
             List<com.food.ordering.system.order.service.domain.dto.create.OrderItem> orderItems) {
         return orderItems.stream()
                 .map(orderItem ->
-                        OrderItem.Builder.builder(new Product(new ProductId(orderItem.productId()))
-                                , orderItem.quantity(), new Money(orderItem.price()),
-                                new Money(orderItem.subTotal()))
+                        OrderItem.Builder.builder()
+                                .product(new Product(new ProductId(orderItem.productId())))
+                                .quantity(orderItem.quantity())
+                                .price(new Money(orderItem.price()))
+                                .subTotal(new Money(orderItem.subTotal()))
                                 .build()).toList();
     }
 
