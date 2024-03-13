@@ -5,9 +5,10 @@ import com.food.ordering.system.domain.valueobject.PaymentStatus;
 import java.math.BigDecimal;
 import java.time.Instant;
 import java.util.List;
+import java.util.UUID;
 
-public record PaymentResponse(String id, String sagaId, String orderId,
-                              String paymentId, String customerId, BigDecimal price,
+public record PaymentResponse(UUID id, UUID sagaId, UUID orderId,
+                              UUID paymentId, UUID customerId, BigDecimal price,
                               Instant createdAt, PaymentStatus paymentStatus,
                               List<String> failureMessages) {
 }
