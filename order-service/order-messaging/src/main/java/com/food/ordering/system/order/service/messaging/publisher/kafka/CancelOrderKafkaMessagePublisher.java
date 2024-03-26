@@ -1,6 +1,7 @@
 package com.food.ordering.system.order.service.messaging.publisher.kafka;
 
 import com.food.order.system.kafka.order.avro.model.PaymentRequestAvroModel;
+import com.food.ordering.system.kafka.producer.KafkaMessageHelper;
 import com.food.ordering.system.kafka.producer.service.KafkaProducer;
 import com.food.ordering.system.order.service.domain.config.OrderServiceConfigData;
 import com.food.ordering.system.order.service.domain.event.OrderCancelledEvent;
@@ -20,13 +21,13 @@ public class CancelOrderKafkaMessagePublisher implements OrderCancelledPaymentRe
 
     private final KafkaProducer<String, PaymentRequestAvroModel> kafkaProducer;
 
-    private final OrderKafkaMessageHelper orderKafkaMessageHelper;
+    private final KafkaMessageHelper kafkaMessageHelper;
 
-    public CancelOrderKafkaMessagePublisher(OrderMessagingDataMapper orderMessagingDataMapper, OrderServiceConfigData orderServiceConfigData, KafkaProducer<String, PaymentRequestAvroModel> kafkaProducer, OrderKafkaMessageHelper orderKafkaMessageHelper) {
+    public CancelOrderKafkaMessagePublisher(OrderMessagingDataMapper orderMessagingDataMapper, OrderServiceConfigData orderServiceConfigData, KafkaProducer<String, PaymentRequestAvroModel> kafkaProducer, KafkaMessageHelper kafkaMessageHelper) {
         this.orderMessagingDataMapper = orderMessagingDataMapper;
         this.orderServiceConfigData = orderServiceConfigData;
         this.kafkaProducer = kafkaProducer;
-        this.orderKafkaMessageHelper = orderKafkaMessageHelper;
+        this.kafkaMessageHelper = kafkaMessageHelper;
     }
     @Override
     public void publish(OrderCancelledEvent domainEvent) {
@@ -38,7 +39,7 @@ public class CancelOrderKafkaMessagePublisher implements OrderCancelledPaymentRe
             kafkaProducer.send(orderServiceConfigData.getPaymentRequestTopicName(),
                     orderId,
                     paymentRequestAvroModel,
-                    orderKafkaMessageHelper
+                    kafkaMessageHelper
                             .getKafkaCallback(orderServiceConfigData.getPaymentRequestTopicName(),
                                     paymentRequestAvroModel,
                                     orderId,
