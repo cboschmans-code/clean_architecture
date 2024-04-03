@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 import java.util.Optional;
 @Component
-public class CreditHistoryRepositoryImpl extends CreditHistoryRepository {
+public class CreditHistoryRepositoryImpl implements CreditHistoryRepository {
 
     private final CreditHistoryJpaRepository creditHistoryJpaRepository;
     private final CreditHistoryDataAccessMapper creditHistoryDataAccessMapper;
