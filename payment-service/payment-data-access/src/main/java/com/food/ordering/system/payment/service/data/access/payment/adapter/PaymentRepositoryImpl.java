@@ -21,13 +21,13 @@ public class PaymentRepositoryImpl implements PaymentRepository {
 
     @Override
     public Payment save(Payment payment) {
-        return paymentDataAccessMapper.paymentEntirtytoPayment(paymentJpaRepository
+        return paymentDataAccessMapper.paymentEntitytoPayment(paymentJpaRepository
                 .save(paymentDataAccessMapper.paymentToPaymentEntity(payment)));
     }
 
     @Override
     public Optional<Payment> findByOrderId(UUID orderId) {
-        return paymentJpaRepository.findOrderById(orderId)
-                .map(paymentDataAccessMapper::paymentEntirtytoPayment);
+        return paymentJpaRepository.findByOrderId(orderId)
+                .map(paymentDataAccessMapper::paymentEntitytoPayment);
     }
 }

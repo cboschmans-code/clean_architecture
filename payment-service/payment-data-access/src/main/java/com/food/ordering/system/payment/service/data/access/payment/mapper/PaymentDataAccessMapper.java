@@ -22,7 +22,7 @@ public class PaymentDataAccessMapper {
                 .build();
     }
 
-    public Payment paymentEntirtytoPayment(PaymentEntity paymentEntity){
+    public Payment paymentEntitytoPayment(PaymentEntity paymentEntity){
         return Payment.Builder.builder()
                 .paymentId(new PaymentId(paymentEntity.getId()))
                 .customerId(new CustomerId(paymentEntity.getCustomerId()))

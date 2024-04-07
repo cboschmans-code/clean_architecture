@@ -1,12 +1,11 @@
 package com.food.ordering.system.payment.service.domain;
 
-import com.food.ordering.system.domain.event.publisher.DomainEventPublisher;
+
 import com.food.ordering.system.domain.valueobject.CustomerId;
 import com.food.ordering.system.payment.service.domain.dto.PaymentRequest;
 import com.food.ordering.system.payment.service.domain.entity.CreditEntry;
 import com.food.ordering.system.payment.service.domain.entity.CreditHistory;
 import com.food.ordering.system.payment.service.domain.entity.Payment;
-import com.food.ordering.system.payment.service.domain.event.PaymentCancelledEvent;
 import com.food.ordering.system.payment.service.domain.event.PaymentEvent;
 import com.food.ordering.system.payment.service.domain.exception.PaymentApplicationServiceException;
 import com.food.ordering.system.payment.service.domain.mapper.PaymentDataMapper;
@@ -75,10 +74,10 @@ public class PaymentRequestHelper {
 
     @Transactional
     public PaymentEvent persistCancelPayment(PaymentRequest paymentRequest) {
-        log.info("Received payment rollback vent for id: {}", paymentRequest.getOrderId());
+        log.info("Received payment rollback event for order id: {}", paymentRequest.getOrderId());
         Optional<Payment> paymentResponse = paymentRepository.findByOrderId(UUID.fromString(paymentRequest.getOrderId()));
         if (paymentResponse.isEmpty()) {
-            log.error("Received payment rollback event for order id : {}", paymentRequest.getOrderId());
+            log.error("Payment with order id : {} could not be found", paymentRequest.getOrderId());
             ;
             throw new PaymentApplicationServiceException("Payment with order id: " +
                     paymentRequest.getOrderId() + " could not be found");

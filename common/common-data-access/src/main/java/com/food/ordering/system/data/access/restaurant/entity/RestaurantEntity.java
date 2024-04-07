@@ -30,7 +30,7 @@ public class RestaurantEntity {
     private Boolean restaurantActive;
     private String productName;
     private BigDecimal productPrice;
-    private Boolean productAvalaible;
+    private Boolean productAvailable;
 
     @Override
     public boolean equals(Object o) {

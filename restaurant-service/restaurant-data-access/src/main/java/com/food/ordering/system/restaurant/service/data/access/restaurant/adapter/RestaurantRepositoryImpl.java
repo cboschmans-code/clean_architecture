@@ -5,11 +5,12 @@ import com.food.ordering.system.data.access.restaurant.repository.RestaurantJpaR
 import com.food.ordering.system.restaurant.service.data.access.restaurant.mapper.RestaurantDataAccessMapper;
 import com.food.ordering.system.restaurant.service.domain.entity.Restaurant;
 import com.food.ordering.system.restaurant.service.domain.ports.output.repository.RestaurantRepository;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
-
+@Component
 public class RestaurantRepositoryImpl implements RestaurantRepository {
 
     private final RestaurantJpaRepository restaurantJpaRepository;

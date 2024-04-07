@@ -28,7 +28,7 @@ public class PaymentDomainServiceImpl implements PaymentDomainService {
         payment.validatePayment(failureMessages);
         payment.initializePayment();
         validateCreditEntry(payment, creditEntry, failureMessages);
-        substractCreditEntry(payment, creditEntry);
+        subtractCreditEntry(payment, creditEntry);
         updateCreditHistory(payment, creditHistories, TransactionType.DEBIT);
         validateCreditHistory(creditEntry, creditHistories, failureMessages);
 
@@ -74,7 +74,7 @@ public class PaymentDomainServiceImpl implements PaymentDomainService {
                 .build());
     }
 
-    private void substractCreditEntry(Payment payment, CreditEntry creditEntry) {
+    private void subtractCreditEntry(Payment payment, CreditEntry creditEntry) {
         creditEntry.subtractCreditAmount(payment.getPrice());
     }
 

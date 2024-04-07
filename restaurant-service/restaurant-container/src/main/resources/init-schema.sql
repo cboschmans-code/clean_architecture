@@ -35,7 +35,7 @@ CREATE TABLE restaurant.products
 (
     id        uuid                                           NOT NULL,
     name      character varying COLLATE pg_catalog."default" NOT NULL,
-    price     numeric(10.2)                                  NOT NULL,
+    price     numeric(10,2)                                  NOT NULL,
     available boolean                                        NOT NULL,
     CONSTRAINT products_pkey PRIMARY KEY (id)
 );
@@ -79,7 +79,7 @@ SELECT r.id        AS restaurant_id,
 FROM restaurant.restaurants r,
      restaurant.products p,
      restaurant.restaurant_products rp
-WHERE p.id = rp.restaurant_id
+WHERE r.id = rp.restaurant_id
   AND p.id = rp.product_id
 WITH DATA;
 
@@ -90,13 +90,11 @@ DROP function IF EXISTS restaurant.refresh_order_restaurant_m_view;
 CREATE OR REPLACE function restaurant.refresh_order_restaurant_m_view()
     returns trigger
 AS
-'
-    BEGIN
+'    BEGIN
         refresh materialized VIEW restaurant.order_restaurant_m_view;
-        rreturn null;
+        return null;
     END;
 ' LANGUAGE plpgsql;
-
 DROP TRIGGER IF EXISTS refresh_order_restaurant_m_view ON restaurant.restaurant_products;
 
 CREATE TRIGGER refresh_order_restaurant_m_view
